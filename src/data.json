@@ -1,0 +1,245 @@
+{
+  "spells": [{
+      "arcanum": "Fate",
+      "level": 1,
+      "name": "Interconnection",
+      "psf": "Potency",
+      "short": "Reveal Fate effects on stuff, show sympathetic connections between subjects, show magical oath violations, and show spells with conditional duration.",
+      "reaches": "1 reach: show possession, mind control, and destiny alterations. 2 reach: get information on a person's destiny or the parameters of a spell with conditional duration.",
+      "rating": 1
+    },
+    {
+      "arcanum": "Fate",
+      "level": 1,
+      "name": "Oaths Fulfilled",
+      "psf": "Duration",
+      "short": "Notify mage when specific event mundane event happens to or by a target.",
+      "reaches": "1 reach: get brief vision of the subject when the oath is Fulfilled. 1 reach: track (not locate) the subject for the spell's duration. 1 reach: event can be something only perceivable in Mage Sight.",
+      "rating": 2
+    },
+    {
+      "arcanum": "Fate",
+      "level": 1,
+      "name": "Quantum Flux",
+      "psf": "Duration",
+      "short": "Remove action dice penalty of Potency for a number of rounds equal to Potency for the duration; subject can also spend a turn to aim for DP boost (mundane only).",
+      "reaches": "",
+      "rating": 1
+    },
+    {
+      "arcanum": "Fate",
+      "level": 1,
+      "name": "Reading the Outmost Eddies",
+      "psf": "Potency",
+      "short": "Small blessing or curse on the target, like finding some money or stepping in feces.",
+      "reaches": "1 reach: the effect occurs within one hour instead of 24.",
+      "rating": 1
+    },
+    {
+      "arcanum": "Fate",
+      "level": 1,
+      "name": "Serendipity",
+      "psf": "Potency",
+      "short": "Get a clear omen that moves toward the goal.",
+      "reaches": "1 reach: when rolling to move toward the goal, substitute any skill of the same type for the one needed. 2 reach: as before, but substitute any skill.",
+      "rating": 3
+    },
+    {
+      "arcanum": "Fate",
+      "level": 2,
+      "name": "Exceptional Luck",
+      "psf": "Potency",
+      "short": "Bestow boon or hex.",
+      "reaches": "2 reach: can affect spellcasting rolls. 2 reach + 1 mana: cast this spell as a reflexive action.",
+      "rating": 5
+    },
+    {
+      "arcanum": "Fate",
+      "level": 2,
+      "name": "Fabricate Fortune",
+      "psf": "Duration",
+      "short": "Trick conditional duration or conditional trigger spells or create false omens about a subject.",
+      "reaches": "",
+      "rating": 2
+    },
+    {
+      "arcanum": "Fate",
+      "level": 2,
+      "name": "Fools Rush In",
+      "psf": "Duration",
+      "short": "Disallowing preparation for an encounter, spell negates untrained penalties and increases the subject's social impression level by 1.",
+      "reaches": "1 reach: dice bonus of Potency to a number of rolls equal to Potency during the duration choosen before rolling. 3 reach: as before, but the bonus can affect spellcasting rolls.",
+      "rating": 2
+    },
+    {
+      "arcanum": "Fate",
+      "level": 2,
+      "name": "Lucky Number",
+      "psf": "Duration",
+      "short": "Guess the correct random number/phrase/code/combination.",
+      "reaches": "",
+      "rating": 3
+    },
+    {
+      "arcanum": "Fate",
+      "level": 2,
+      "name": "Shifting the Odds",
+      "psf": "Duration",
+      "short": "Locate something specific; gain access to social merits equal to Potency. Works quickly if surrounded by similar things as the target.",
+      "reaches": "1 reach: locates the target within 1 hour intead of 24.",
+      "rating": 4
+    },
+    {
+      "arcanum": "Fate",
+      "level": 2,
+      "name": "Warding Gesture",
+      "psf": "Duration",
+      "short": "Protect against fate or exclude subject from the mage's AoE spells.",
+      "reaches": "1 reach: can selectively exclude the subject from AoE spells and attainments. 2 reach: selectively grant protection from supernatural effects that target an area instead of individuals - provoks Clash of Wills.",
+      "rating": 2
+    },
+    {
+      "arcanum": "Time",
+      "level": 1,
+      "name": "Divination",
+      "psf": "Potency",
+      "short": "Ask a yes/no question about the subject's future.",
+      "reaches": "1 reach: ask specific questions and get specific answers.",
+      "rating": 4
+    },
+    {
+      "arcanum": "Time",
+      "level": 1,
+      "name": "Green Light / Red Light",
+      "psf": "Duration",
+      "short": "Time speeds up to help or slows down to hinder the subject.",
+      "reaches": "",
+      "rating": 1
+    },
+    {
+      "arcanum": "Time",
+      "level": 1,
+      "name": "Momentary Flux",
+      "psf": "Potency",
+      "short": "Know if a subject will help or hinder in the near future. Can use on the magic themself to see if their actions will help or hinder.",
+      "reaches": "1 reach: initiative bonus of Potency.",
+      "rating": 2
+    },
+    {
+      "arcanum": "Time",
+      "level": 1,
+      "name": "Perfect Timing",
+      "psf": "Duration",
+      "short": "Spending a turn without Defense to plan grants bonus of Potency to next non-extended mundane action.",
+      "reaches": "",
+      "rating": 1
+    },
+    {
+      "arcanum": "Time",
+      "level": 1,
+      "name": "Postcognition",
+      "psf": "Potency",
+      "short": "See the subject's past.",
+      "reaches": "1 reach: scrub the vision like a video. 1 reach: mage does not lose Defense during the viewing.",
+      "rating": 5
+    },
+    {
+      "arcanum": "Time",
+      "level": 2,
+      "name": "Choose the Thread",
+      "psf": "Potency",
+      "short": "Subject rolls twice and the mage picks which result they use.",
+      "reaches": "2 reach: can affect spellcasting roles and supernatural powers.",
+      "rating": 4
+    },
+    {
+      "arcanum": "Time",
+      "level": 2,
+      "name": "Constant Presence",
+      "psf": "Duration",
+      "short": "Prevent timeline alterations.",
+      "reaches": "",
+      "rating": 1
+    },
+    {
+      "arcanum": "Time",
+      "level": 2,
+      "name": "Hung Spell",
+      "psf": "Duration",
+      "short": "Delay spells to go off later. Prevents their Duration from decaying. Hanging the spell requires spending 1 mana. Can hold spells up to Potency. When this spell expires, all held spells go off.",
+      "reaches": "",
+      "rating": 2
+    },
+    {
+      "arcanum": "Time",
+      "level": 2,
+      "name": "Shield of Chronos",
+      "psf": "Duration",
+      "short": "Prevent subject from being viewed by time travelers.",
+      "reaches": "1 reach: can create false events instead of blocking viewing.",
+      "rating": 1
+    },
+    {
+      "arcanum": "Time",
+      "level": 2,
+      "name": "Tipping the Hourglass",
+      "psf": "Potency",
+      "short": "Add or subtract Potency from subject's initiative.",
+      "reaches": "",
+      "rating": 1
+    },
+    {
+      "arcanum": "Time",
+      "level": 2,
+      "name": "Veil of Moments",
+      "psf": "Duration",
+      "short": "Pause time on the subject - they won't bleed out or die from poison; conditions and tilts cannot be applied on the subject for the duration.",
+      "reaches": "1 reach: ignore Persistent conditions for the duration (does not satisfy time requirements for condition to lapse). 1 reach: subject can heal naturally. 1 reach: subject can regain willpower. 1 reach: subject can regain mana.",
+      "rating": 2
+    },
+    {
+      "arcanum": "Time",
+      "level": 3,
+      "name": "Acceleration",
+      "psf": "Potency",
+      "short": "Multiply subject's Speed by Potency. Subject always goes first in a turn. Add Potency to Defense before calculating Dodge. Can use Defense against firearms.",
+      "reaches": "1 reach: divide the time per roll of mundane extended actions by Potency. 1 reach + 1 mana: dodge actions have the rote quality.",
+      "rating": 3
+    },
+    {
+      "arcanum": "Time",
+      "level": 3,
+      "name": "Chronos' Curse",
+      "psf": "Potency",
+      "short": "Divide the subject's Speed by Potency, rounding down. Subject goes last in a turn. Subject's Defense is reduced by Potency.",
+      "reaches": "1 reach + 1 mana: subject loses Defense against attacks. 1 reach: multiply the time per roll of mundane extended actions by Potency.",
+      "rating": 2
+    },
+    {
+      "arcanum": "Time",
+      "level": 3,
+      "name": "Shifting Sands",
+      "psf": "Potency",
+      "short": "Travel back in time by Potency in turns. They retain injuries and conditions gained in the undone turns, and spent Mana and Willpower are not returned. Other spells cast on the subject in the revised time are canceled. When this spell ends, the changes are Lasting.",
+      "reaches": "1 reach: travel back a full scene instead (can apply this reach multiple times).",
+      "rating": 5
+    }, {
+      "arcanum": "Time",
+      "level": 3,
+      "name": "Temporal Summoning",
+      "psf": "Potency",
+      "short": "Reverse time on a subject for the duration. Can restore things to what the used to be, including far in the past with Temporal Sympathy. Cannot bring the dead back to life.",
+      "reaches": "",
+      "rating": 3
+    },
+    {
+      "arcanum": "Time",
+      "level": 3,
+      "name": "Weight of Years",
+      "psf": "Potency",
+      "short": "Advance time on the subject, inflicting Potency in bashing damage. Also works on structures. Might not work on immportal creatures.",
+      "reaches": "1 reach: reduce subject's Athletics rating by Potency.",
+      "rating": 1
+    }
+  ]
+}
