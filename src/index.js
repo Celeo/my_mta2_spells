@@ -5,6 +5,18 @@ import '../node_modules/materialize-css/dist/css/materialize.min.css'
 import './index.css'
 import spellData from './data.json'
 
+const SpellReach = (props) => {
+  const reachText = Array.from(Array(props.count).keys()).map(_ => '➕').join('')
+  return (
+    <p className="spell-reaches">{ reachText } { props.effect }</p>
+  )
+}
+
+SpellReach.propTypes = {
+  count: PropTypes.number,
+  effect: PropTypes.string
+}
+
 const Spell = (props) => {
   return (
     <div>
@@ -13,7 +25,9 @@ const Spell = (props) => {
         { props.rating > 0 && <span className="spell-rating">{ '⭐'.repeat(props.rating) }</span> }
       </h4>
       <p className="spell-body"><strong>{ props.short }</strong></p>
-      <p className="spell-reaches">{ props.reaches }</p>
+      {
+        props.reaches.map(r => <SpellReach key={r.count + ':' + r.effect} count={r.count} effect={r.effect} />)
+      }
       <hr />
     </div>
   )
@@ -25,28 +39,26 @@ Spell.propTypes = {
   name: PropTypes.string,
   psf: PropTypes.string,
   short: PropTypes.string,
-  reaches: PropTypes.string,
+  reaches: PropTypes.array,
   rating: PropTypes.number
 }
 
 const Index = (props) => {
   return (
     <div className="container-medium">
-      <div>
-        {
-          spellData.spells.map(s =>
-            <Spell
-              key={s.name}
-              arcanum={s.arcanum}
-              level={s.level}
-              name={s.name}
-              psf={s.psf}
-              short={s.short}
-              reaches={s.reaches}
-              rating={s.rating}
-            />)
-        }
-      </div>
+      {
+        spellData.spells.map(s =>
+          <Spell
+            key={s.name}
+            arcanum={s.arcanum}
+            level={s.level}
+            name={s.name}
+            psf={s.psf}
+            short={s.short}
+            reaches={s.reaches}
+            rating={s.rating}
+          />)
+      }
     </div>
   )
 }

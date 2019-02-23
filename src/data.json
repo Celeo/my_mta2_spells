@@ -4,8 +4,17 @@
       "level": 1,
       "name": "Interconnection",
       "psf": "Potency",
-      "short": "Reveal Fate effects on stuff, show sympathetic connections between subjects, show magical oath violations, and show spells with conditional duration.",
-      "reaches": "1 reach: show possession, mind control, and destiny alterations. 2 reach: get information on a person's destiny or the parameters of a spell with conditional duration.",
+      "short": "Reveal Fate's effect on stuff, show sympathetic connections between subjects, show magical oath violations, and show spells with conditional duration.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Show possession, mind control, and destiny alterations."
+        },
+        {
+          "count": 2,
+          "effect": "Get information on a person's destiny or the parameters of a spell with conditional duration."
+        }
+      ],
       "rating": 1
     },
     {
@@ -14,7 +23,20 @@
       "name": "Oaths Fulfilled",
       "psf": "Duration",
       "short": "Notify mage when specific event mundane event happens to or by a target.",
-      "reaches": "1 reach: get brief vision of the subject when the oath is Fulfilled. 1 reach: track (not locate) the subject for the spell's duration. 1 reach: event can be something only perceivable in Mage Sight.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Get brief vision of the subject when the oath is Fulfilled."
+        },
+        {
+          "count": 1,
+          "effect": "Track (not locate) the subject for the spell's duration."
+        },
+        {
+          "count": 1,
+          "effect": "Event can be something only perceivable in Mage Sight."
+        }
+      ],
       "rating": 2
     },
     {
@@ -23,7 +45,7 @@
       "name": "Quantum Flux",
       "psf": "Duration",
       "short": "Remove action dice penalty of Potency for a number of rounds equal to Potency for the duration; subject can also spend a turn to aim for DP boost (mundane only).",
-      "reaches": "",
+      "reaches": [],
       "rating": 1
     },
     {
@@ -32,7 +54,12 @@
       "name": "Reading the Outmost Eddies",
       "psf": "Potency",
       "short": "Small blessing or curse on the target, like finding some money or stepping in feces.",
-      "reaches": "1 reach: the effect occurs within one hour instead of 24.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "The effect occurs within one hour instead of 24."
+        }
+      ],
       "rating": 1
     },
     {
@@ -41,7 +68,16 @@
       "name": "Serendipity",
       "psf": "Potency",
       "short": "Get a clear omen that moves toward the goal.",
-      "reaches": "1 reach: when rolling to move toward the goal, substitute any skill of the same type for the one needed. 2 reach: as before, but substitute any skill.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "When rolling to move toward the goal, substitute any skill of the same type for the one needed."
+        },
+        {
+          "count": 2,
+          "effect": "As before, but substitute any skill."
+        }
+      ],
       "rating": 3
     },
     {
@@ -50,7 +86,16 @@
       "name": "Exceptional Luck",
       "psf": "Potency",
       "short": "Bestow boon or hex.",
-      "reaches": "2 reach: can affect spellcasting rolls. 2 reach + 1 mana: cast this spell as a reflexive action.",
+      "reaches": [
+        {
+          "count": 2,
+          "effect": "Can affect spellcasting rolls."
+        },
+        {
+          "count": 2,
+          "effect": "+1 mana: cast this spell as a reflexive action."
+        }
+      ],
       "rating": 5
     },
     {
@@ -59,7 +104,7 @@
       "name": "Fabricate Fortune",
       "psf": "Duration",
       "short": "Trick conditional duration or conditional trigger spells or create false omens about a subject.",
-      "reaches": "",
+      "reaches": [],
       "rating": 2
     },
     {
@@ -68,7 +113,16 @@
       "name": "Fools Rush In",
       "psf": "Duration",
       "short": "Disallowing preparation for an encounter, spell negates untrained penalties and increases the subject's social impression level by 1.",
-      "reaches": "1 reach: dice bonus of Potency to a number of rolls equal to Potency during the duration choosen before rolling. 3 reach: as before, but the bonus can affect spellcasting rolls.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Dice bonus of Potency to a number of rolls equal to Potency during the duration choosen before rolling."
+        },
+        {
+          "count": 3,
+          "effect": "As before, but the bonus can affect spellcasting rolls."
+        }
+      ],
       "rating": 2
     },
     {
@@ -77,7 +131,7 @@
       "name": "Lucky Number",
       "psf": "Duration",
       "short": "Guess the correct random number/phrase/code/combination.",
-      "reaches": "",
+      "reaches": [],
       "rating": 3
     },
     {
@@ -86,7 +140,12 @@
       "name": "Shifting the Odds",
       "psf": "Duration",
       "short": "Locate something specific; gain access to social merits equal to Potency. Works quickly if surrounded by similar things as the target.",
-      "reaches": "1 reach: locates the target within 1 hour intead of 24.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Locates the target within 1 hour intead of 24."
+        }
+      ],
       "rating": 4
     },
     {
@@ -95,7 +154,16 @@
       "name": "Warding Gesture",
       "psf": "Duration",
       "short": "Protect against fate or exclude subject from the mage's AoE spells.",
-      "reaches": "1 reach: can selectively exclude the subject from AoE spells and attainments. 2 reach: selectively grant protection from supernatural effects that target an area instead of individuals - provoks Clash of Wills.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Can selectively exclude the subject from AoE spells and attainments."
+        },
+        {
+          "count": 2,
+          "effect": "Selectively grant protection from supernatural effects that target an area instead of individuals - provokes Clash of Wills."
+        }
+      ],
       "rating": 2
     },
     {
@@ -104,7 +172,12 @@
       "name": "Divination",
       "psf": "Potency",
       "short": "Ask a yes/no question about the subject's future.",
-      "reaches": "1 reach: ask specific questions and get specific answers.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Ask specific questions and get specific answers."
+        }
+      ],
       "rating": 4
     },
     {
@@ -113,7 +186,7 @@
       "name": "Green Light / Red Light",
       "psf": "Duration",
       "short": "Time speeds up to help or slows down to hinder the subject.",
-      "reaches": "",
+      "reaches": [],
       "rating": 1
     },
     {
@@ -122,7 +195,12 @@
       "name": "Momentary Flux",
       "psf": "Potency",
       "short": "Know if a subject will help or hinder in the near future. Can use on the magic themself to see if their actions will help or hinder.",
-      "reaches": "1 reach: initiative bonus of Potency.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Initiative bonus of Potency."
+        }
+      ],
       "rating": 2
     },
     {
@@ -131,7 +209,7 @@
       "name": "Perfect Timing",
       "psf": "Duration",
       "short": "Spending a turn without Defense to plan grants bonus of Potency to next non-extended mundane action.",
-      "reaches": "",
+      "reaches": [],
       "rating": 1
     },
     {
@@ -140,7 +218,16 @@
       "name": "Postcognition",
       "psf": "Potency",
       "short": "See the subject's past.",
-      "reaches": "1 reach: scrub the vision like a video. 1 reach: mage does not lose Defense during the viewing.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Scrub the vision like a video."
+        },
+        {
+          "count": 1,
+          "effect": "Mage does not lose Defense during the viewing."
+        }
+      ],
       "rating": 5
     },
     {
@@ -149,7 +236,12 @@
       "name": "Choose the Thread",
       "psf": "Potency",
       "short": "Subject rolls twice and the mage picks which result they use.",
-      "reaches": "2 reach: can affect spellcasting roles and supernatural powers.",
+      "reaches": [
+        {
+          "count": 2,
+          "effect": "Can affect spellcasting roles and supernatural powers."
+        }
+      ],
       "rating": 4
     },
     {
@@ -158,7 +250,7 @@
       "name": "Constant Presence",
       "psf": "Duration",
       "short": "Prevent timeline alterations.",
-      "reaches": "",
+      "reaches": [],
       "rating": 1
     },
     {
@@ -167,7 +259,7 @@
       "name": "Hung Spell",
       "psf": "Duration",
       "short": "Delay spells to go off later. Prevents their Duration from decaying. Hanging the spell requires spending 1 mana. Can hold spells up to Potency. When this spell expires, all held spells go off.",
-      "reaches": "",
+      "reaches": [],
       "rating": 2
     },
     {
@@ -176,7 +268,12 @@
       "name": "Shield of Chronos",
       "psf": "Duration",
       "short": "Prevent subject from being viewed by time travelers.",
-      "reaches": "1 reach: can create false events instead of blocking viewing.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Can create false events instead of blocking viewing."
+        }
+      ],
       "rating": 1
     },
     {
@@ -185,7 +282,7 @@
       "name": "Tipping the Hourglass",
       "psf": "Potency",
       "short": "Add or subtract Potency from subject's initiative.",
-      "reaches": "",
+      "reaches": [],
       "rating": 1
     },
     {
@@ -194,7 +291,24 @@
       "name": "Veil of Moments",
       "psf": "Duration",
       "short": "Pause time on the subject - they won't bleed out or die from poison; conditions and tilts cannot be applied on the subject for the duration.",
-      "reaches": "1 reach: ignore Persistent conditions for the duration (does not satisfy time requirements for condition to lapse). 1 reach: subject can heal naturally. 1 reach: subject can regain willpower. 1 reach: subject can regain mana.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Ignore Persistent conditions for the duration (does not satisfy time requirements for condition to lapse)."
+        },
+        {
+          "count": 1,
+          "effect": "Subject can heal naturally."
+        },
+        {
+          "count": 1,
+          "effect": "Subject can regain willpower."
+        },
+        {
+          "count": 1,
+          "effect": "Subject can regain mana."
+        }
+      ],
       "rating": 2
     },
     {
@@ -203,7 +317,16 @@
       "name": "Acceleration",
       "psf": "Potency",
       "short": "Multiply subject's Speed by Potency. Subject always goes first in a turn. Add Potency to Defense before calculating Dodge. Can use Defense against firearms.",
-      "reaches": "1 reach: divide the time per roll of mundane extended actions by Potency. 1 reach + 1 mana: dodge actions have the rote quality.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Divide the time per roll of mundane extended actions by Potency."
+        },
+        {
+          "count": 1,
+          "effect": "+1 mana: dodge actions have the rote quality."
+        }
+      ],
       "rating": 3
     },
     {
@@ -212,7 +335,16 @@
       "name": "Chronos' Curse",
       "psf": "Potency",
       "short": "Divide the subject's Speed by Potency, rounding down. Subject goes last in a turn. Subject's Defense is reduced by Potency.",
-      "reaches": "1 reach + 1 mana: subject loses Defense against attacks. 1 reach: multiply the time per roll of mundane extended actions by Potency.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "+1 mana: subject loses Defense against attacks."
+        },
+        {
+          "count": 1,
+          "effect": "Multiply the time per roll of mundane extended actions by Potency."
+        }
+      ],
       "rating": 2
     },
     {
@@ -221,7 +353,12 @@
       "name": "Shifting Sands",
       "psf": "Potency",
       "short": "Travel back in time by Potency in turns. They retain injuries and conditions gained in the undone turns, and spent Mana and Willpower are not returned. Other spells cast on the subject in the revised time are canceled. When this spell ends, the changes are Lasting.",
-      "reaches": "1 reach: travel back a full scene instead (can apply this reach multiple times).",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Travel back a full scene instead (can apply this reach multiple times)."
+        }
+      ],
       "rating": 5
     }, {
       "arcanum": "Time",
@@ -229,7 +366,7 @@
       "name": "Temporal Summoning",
       "psf": "Potency",
       "short": "Reverse time on a subject for the duration. Can restore things to what the used to be, including far in the past with Temporal Sympathy. Cannot bring the dead back to life.",
-      "reaches": "",
+      "reaches": [],
       "rating": 3
     },
     {
@@ -238,7 +375,12 @@
       "name": "Weight of Years",
       "psf": "Potency",
       "short": "Advance time on the subject, inflicting Potency in bashing damage. Also works on structures. Might not work on immportal creatures.",
-      "reaches": "1 reach: reduce subject's Athletics rating by Potency.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Reduce subject's Athletics rating by Potency."
+        }
+      ],
       "rating": 1
     }
   ]
