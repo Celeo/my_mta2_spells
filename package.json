@@ -6,7 +6,7 @@
   "author": "Celeo <celeodor@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server -d --hot",
+    "dev": "webpack-dev-server -d",
     "build": "webpack -p",
     "deploy": "surge dist my_mta2_spells.surge.sh"
   },
@@ -34,7 +34,6 @@
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "react-hot-loader": "^4.6.3",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",

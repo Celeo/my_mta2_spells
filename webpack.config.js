@@ -1,7 +1,9 @@
-const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  entry: {
+    app: './src/index.js'
+  },
   module: {
     rules: [
       {
@@ -22,11 +24,9 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './index.html',
       filename: './index.html'
-    }),
-    new webpack.HotModuleReplacementPlugin()
+    })
   ],
   devServer: {
-    contentBase: './dist',
-    hot: true
+    contentBase: './dist'
   }
 }
