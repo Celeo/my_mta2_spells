@@ -348,7 +348,7 @@
       "psf": "Duration",
       "short": "Inflict a Biblical-level happening on the area, like swarms of animals, total solar eclipses, etc. This occurrance wrecks havoc, immediately causing Breaking Points in Sleepers, and appropriate Environmental Tilts.",
       "reaches": [],
-      "rating": 5
+      "rating": 4
     },
     {
       "arcanum": "Time",
