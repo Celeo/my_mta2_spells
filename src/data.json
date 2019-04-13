@@ -1,5 +1,6 @@
 {
-  "spells": [{
+  "spells": [
+    {
       "arcanum": "Fate",
       "level": 1,
       "name": "Interconnection",
@@ -361,7 +362,7 @@
           "effect": "Ask specific questions and get specific answers."
         }
       ],
-      "rating": 4
+      "rating": 3
     },
     {
       "arcanum": "Time",
@@ -565,6 +566,108 @@
         }
       ],
       "rating": 1
+    },
+    {
+      "arcanum": "Time",
+      "level": 4,
+      "name": "Present as Past",
+      "psf": "Poetncy",
+      "short": "Costs 1 mana. In combat, the subject can require all affected subjects to declare their actions before taking them. The subject can act at any point in the Initiative order. This supersedes all other Initiative modifying effects except Time spells which are a Clash of Wills. In Social Combat, mage adds Potency Doors to themself or subtracts Potency Doors from their opponent.",
+      "reaches": [],
+      "rating": 4
+    },
+    {
+      "arcanum": "Time",
+      "level": 4,
+      "name": "Prophecy",
+      "psf": "Potency",
+      "short": "Like Divination, but works for hypothetical situations and what might happen. Ask Potency questions.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "In Social Combat, reduce the subject's Doors by Potency."
+        }
+      ],
+      "rating": 5
+    },
+    {
+      "arcanum": "Time",
+      "level": 4,
+      "name": "Rend Lifespan",
+      "psf": "Potency",
+      "short": "Inflict Potency lethal damage by aging different parts of the subject's body. Ageless entities are immune.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "+1 mana: inflicts aggravated damage."
+        }
+      ],
+      "rating": 4
+    },
+    {
+      "arcanum": "Time",
+      "level": 4,
+      "name": "Rewrite history",
+      "psf": "Potency",
+      "withstand": "Resolve",
+      "short": "Alter the subject's past, changing events and outcomes in their life to change their current self. Temporal Sympathy applies. Cannot create an impossible timeline. After spell expiration, the subject reverts to their true history, but they will remember their false history like a dream. Does not affect supernatural creatures.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Reassign Potency Skill or Merit dots; cannot exceed maximums."
+        },
+        {
+          "count": 1,
+          "effect": "Reassign Potency Attribute dots; cannot exceed chargen minimums; cannot exceed maximums."
+        },
+        {
+          "count": 2,
+          "effect": "Affect supernatural creatures. Cannot remove their supernatural advantages, but can make entities that were transformed experience life as if that event hadn't occurred."
+        }
+      ],
+      "rating": 3
+    },
+    {
+      "arcanum": "Time",
+      "level": 4,
+      "name": "Temporal Stutter",
+      "psf": "Potency",
+      "withstand": "Stamina",
+      "short": "Push the subject forward in time after the Duration. Preserves location and momentum unless the caster also has Space 2 and uses a Sympathic Range Attainment.",
+      "reaches": [],
+      "rating": 2
+    },
+    {
+      "arcanum": "Time",
+      "level": 5,
+      "name": "Blink of an Eye",
+      "psf": "Potency",
+      "short": "Next extended action becomes an instant action by combining Potency rolls into a single turn. Does not affect ritual casting.",
+      "reaches": [
+        {
+          "count": 2,
+          "effect": "+1 mana: increase Gnosis by Potency for ritual casting time."
+        }
+      ],
+      "rating": 3
+    },
+    {
+      "arcanum": "Time",
+      "level": 5,
+      "name": "Corridors of Time",
+      "psf": "Potency",
+      "short": "Send a subject back into their own past. They exist there for the Duration of the spell or until they meet the present. Changes are Lasting. Temporal Sympathy applies. Can add Space 2 and the Sympathetic Range Attainment to choose where in space the subject is located when sent back. Cannot send a subject back before they were born.",
+      "reaches": [],
+      "rating": 5
+    },
+    {
+      "arcanum": "Time",
+      "level": 5,
+      "name": "Temporal Pocket",
+      "psf": "Duration",
+      "short": "Freeze time for Duration. Time applies as normal to the subject. Attempting to physically change the world ends the spell, but succeeds.",
+      "reaches": [],
+      "rating": 4
     }
   ]
 }
