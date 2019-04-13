@@ -9,6 +9,15 @@
     margin-left: 1rem;
 }
 
+h4 {
+    margin-bottom: 0;
+}
+
+.withstand-rating {
+    font-size: 120%;
+    margin-bottom: -1em;
+}
+
 .spell-body {
     font-size: 140%;
 }
@@ -17,4 +26,8 @@
     font-size: 110%;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+body {
+    padding-bottom: 5em;
 }
