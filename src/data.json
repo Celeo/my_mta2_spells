@@ -167,6 +167,189 @@
       "rating": 2
     },
     {
+      "arcanum": "Fate",
+      "level": 3,
+      "name": "Grave Misfortune",
+      "psf": "Potency",
+      "short": "The next Potency times the target takes damage, they also take extra Potency damage.",
+      "reaches": [],
+      "rating": 4
+    },
+    {
+      "arcanum": "Fate",
+      "level": 3,
+      "name": "Monkey's Paw",
+      "psf": "Potency",
+      "short": "Enchant an object. Equipment bonus is increased or decreased by Potency, though cannot exceed +/- 5.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Person touching the object gets either a boon or hex."
+        },
+        {
+          "count": 1,
+          "effect": "+1 mana: bonus/penalty may exceed 5."
+        }
+      ],
+      "rating": 2
+    },
+    {
+      "arcanum": "Fate",
+      "level": 3,
+      "name": "Shared Fate",
+      "psf": "Potency",
+      "withstand": "Composure",
+      "short": "When one subject suffers damange/tilt/condition, other connected subjects suffer it as well.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Link only works one way."
+        },
+        {
+          "count": 2,
+          "effect": "Instead of linking the subject to anyone else, the subject instead suffers any damage/tilt/condition they inflict."
+        }
+      ],
+      "rating": 4
+    },
+    {
+      "arcanum": "Fate",
+      "level": 3,
+      "name": "Superlative Luck",
+      "psf": "Duration",
+      "short": "Costs 1 mana. Subject gains rote quality on Potency mundane dice rolls. Subject chooses before rolling if they want to use this effect on each roll.",
+      "reaches": [
+        {
+          "count": 2,
+          "effect": "Subject's player may apply the spell's effect to ritual spellcasting. This doubles the subject's cast time."
+        }
+      ],
+      "rating": 2
+    },
+    {
+      "arcanum": "Fate",
+      "level": 3,
+      "name": "Sworn Oaths",
+      "psf": "Duration",
+      "short": "Subject makes a promise and what will happen if they fail to uphold it. While they uphold the promise, they get a boon. Break it, and they suffers the hex they agreed to for the remainder of the Duration. Can be cast on multiple subjects at once to enforce multi-party contracts.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Mage is aware if the spell is granting a boon or hex."
+        }
+      ],
+      "rating": 2
+    },
+    {
+      "arcanum": "Fate",
+      "level": 4,
+      "name": "Atonement",
+      "psf": "Potency",
+      "short": "Dispel an effect if the subject undergoes a journey. It's weird; check the book.",
+      "reaches": [],
+      "rating": 1
+    },
+    {
+      "arcanum": "Fate",
+      "level": 4,
+      "name": "Choas Mastery",
+      "psf": "Duration",
+      "short": "Manipulate probabilities to control the outcome of Potency events. Cannot create supernatural effects. Can control how an accident happens, inflict a condition, reduce a roll to a chance die, protect from circumstances.",
+      "reaches": [],
+      "rating": 3
+    },
+    {
+      "arcanum": "Fate",
+      "level": 4,
+      "name": "Divine Intervention",
+      "psf": "Potency",
+      "withstand": "Resolve",
+      "short": "Compel the subject to achieve or avoid a task. Subject must be aware of the goal, and it cannot be impossible. Subject has an Aspiration replaced by the goal. Inflicts a hex if the subject goes against the spell.",
+      "reaches": [],
+      "rating": 3
+    },
+    {
+      "arcanum": "Fate",
+      "level": 4,
+      "name": "Strings of Fate",
+      "psf": "Duration",
+      "withstand": "Resolve",
+      "short": "Patterns Fate to bring about a specific event. If it's simple, it happens as soon as possible. Otherwise, the spell moves toward the goal at least weekly. Goal cannot be impossible.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Spell instead creates opportunities daily."
+        }
+      ],
+      "rating": 3
+    },
+    {
+      "arcanum": "Fate",
+      "level": 4,
+      "name": "Sever Oaths",
+      "psf": "Duration",
+      "withstand": "Composuse",
+      "short": "Can perform Potency of the following actions: free an entity or soul | change the effect of a boon or hex | modify/negate an oath from a Fate spell | change/dispell conditional trigger | modify the Doom from a Destiny Merit.",
+      "reaches": [
+        {
+          "count": 2,
+          "effect": "Spell's effects are Lasting."
+        }
+      ],
+      "rating": 3
+    },
+    {
+      "arcanum": "Fate",
+      "level": 5,
+      "name": "Forge Destiny",
+      "psf": "Duration",
+      "withstand": "Composuse",
+      "short": "Apply one of the following effects: grant a supernatural merit that the subject qualifies for, max rating of Potency (Sancity of Merits does not apply) | increase/decrease subject's rating in a supernatural merit by Potency | impose Aspirations/Obsessions of Potency, replacing existing | change the subject's Doom (does not require Destiny Merit)",
+      "reaches": [],
+      "rating": 4
+    },
+    {
+      "arcanum": "Fate",
+      "level": 5,
+      "name": "Pariah",
+      "psf": "Potency",
+      "short": "Turn the world against the subject. Other people are put off by them. Subject takes -Potency to all positive social actions. Any actions at all to help the subject are done so under a hex. Any actions to hinder or hurt the subject are done so with a boon.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Can adjust the sensitivity of the curse, like by not giving boons to those attempting to kill the subject."
+        }
+      ],
+      "rating": 5
+    },
+    {
+      "arcanum": "Fate",
+      "level": 5,
+      "name": "Miracle",
+      "psf": "Potency",
+      "short": "Grants Potency Intercessions, to be spent on the following: increase/decrease successes on a roll by 1 after rolling | cause a reasonably likely event to happen immediately",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "+1 intersession, +1 willpower: cause a low-probability event"
+        },
+        {
+          "count": 2,
+          "effect": "+1 intercessions, +1 willpower, +1 mana: cause any non-impossible event"
+        }
+      ],
+      "rating": 5
+    },
+    {
+      "arcanum": "Fate",
+      "level": 5,
+      "name": "Swarm of Locusts",
+      "psf": "Duration",
+      "short": "Inflict a Biblical-level happening on the area, like swarms of animals, total solar eclipses, etc. This occurrance wrecks havoc, immediately causing Breaking Points in Sleepers, and appropriate Environmental Tilts.",
+      "reaches": [],
+      "rating": 5
+    },
+    {
       "arcanum": "Time",
       "level": 1,
       "name": "Divination",
@@ -316,7 +499,7 @@
       "level": 3,
       "name": "Acceleration",
       "psf": "Potency",
-      "short": "Multiply subject's Speed by Potency. Subject always goes first in a turn. Add Potency to Defense before calculating Dodge. Can use Defense against firearms.",
+      "short": "Costs 1 mana. Multiply subject's Speed by Potency. Subject always goes first in a turn. Add Potency to Defense before calculating Dodge. Can use Defense against firearms.",
       "reaches": [
         {
           "count": 1,
@@ -334,7 +517,7 @@
       "level": 3,
       "name": "Chronos' Curse",
       "psf": "Potency",
-      "short": "Divide the subject's Speed by Potency, rounding down. Subject goes last in a turn. Subject's Defense is reduced by Potency.",
+      "short": "Costs 1 mana. Divide the subject's Speed by Potency, rounding down. Subject goes last in a turn. Subject's Defense is reduced by Potency.",
       "reaches": [
         {
           "count": 1,
