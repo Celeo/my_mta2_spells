@@ -7,7 +7,7 @@ import 'rc-slider/assets/index.css'
 import './index.css'
 import spellData from './data.json'
 
-const sliderMarks = { 0: 'None', 1: 1, 2: 2, 3: 3, 4: 4, 5: 5 }
+const sliderMarks = { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5 }
 
 const SpellReach = (props) => {
   const reachText = Array.from(Array(props.count).keys()).map(_ => '➕').join('')
@@ -55,7 +55,7 @@ const ArcanumSlider = (props) => {
       <h5 className="slider-title">{props.title}</h5>
       <Slider
         min={0}
-        max={5}
+        max={props.max}
         step={1}
         marks={sliderMarks}
         value={props.level}
@@ -68,6 +68,7 @@ const ArcanumSlider = (props) => {
 ArcanumSlider.propTypes = {
   title: PropTypes.string,
   level: PropTypes.number,
+  max: PropTypes.number,
   onChange: PropTypes.func
 }
 
@@ -89,7 +90,7 @@ const ControlSliders = (props) => {
             props.rows.map((row, index) =>
               <div key={row[0]}>
                 <div className="col m4 s12">
-                  <ArcanumSlider title={row[0]} level={row[1]} onChange={row[2]} />
+                  <ArcanumSlider title={row[0]} level={row[1]} max={row[3] || 5} onChange={row[2]} />
                 </div>
                 { index !== props.rows.length - 1 ? <div className="hide-on-med-and-up spacer" /> : null }
               </div>
@@ -122,7 +123,7 @@ const Index = () => {
         rows={[
           [ 'Fate', fateLevel, setFateLevel ],
           [ 'Time', timeLevel, setTimeLevel ],
-          [ 'Prime', primeLevel, setPrimeLevel ]
+          [ 'Prime', primeLevel, setPrimeLevel, 1 ]
         ]}
       />
       <div className="container-medium">
