@@ -602,7 +602,7 @@
           "effect": "+1 mana: inflicts aggravated damage."
         }
       ],
-      "rating": 4
+      "rating": 3
     },
     {
       "arcanum": "Time",
@@ -635,7 +635,7 @@
       "withstand": "Stamina",
       "short": "Push the subject forward in time after the Duration. Preserves location and momentum unless the caster also has Space 2 and uses a Sympathic Range Attainment.",
       "reaches": [],
-      "rating": 2
+      "rating": 4
     },
     {
       "arcanum": "Time",
@@ -668,6 +668,87 @@
       "short": "Freeze time for Duration. Time applies as normal to the subject. Attempting to physically change the world ends the spell, but succeeds.",
       "reaches": [],
       "rating": 4
+    },
+    {
+      "arcanum": "Prime",
+      "level": 1,
+      "name": "Dispel Magic",
+      "psf": "Potency",
+      "withstand": "Rating of the spell's caster",
+      "short": "Requires including all Arcana involved in the target spell with at least 1 dot. Supresses the spell. Add Fate 1 to supress it for a number of selected subjects.",
+      "reaches": [
+        {
+          "count": 2,
+          "effect": "+1 mana: effect is lasting. If the spell's caster has not relinquished the spell, they are made aware."
+        }
+      ],
+      "rating": 2
+    },
+    {
+      "arcanum": "Prime",
+      "level": 1,
+      "name": "Pierce Deception",
+      "psf": "Duration",
+      "short": "See through illusions, phantasms, and lies. May cause a Clash of Wills to see through magical falsehoods. Only reveals active falsehoods.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Get an idea what the truth is."
+        }
+      ],
+      "rating": 2
+    },
+    {
+      "arcanum": "Prime",
+      "level": 1,
+      "name": "Supernal Vision",
+      "psf": "Potency",
+      "short": "Study a subject for one turn, then know the connection to the Supernal (Sleeper/Sleepwalker/Mage/Proximus, or Demesne/Verge, or Imbued/Enhanced/Artifact). Also ask Potency from the following: mana count | supernal world alignment | highest-rated arcanum | level of an arcanum | how many arcana | level of nimbus | level of gnosis.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Shows nature of supernatural beings/effects, but the Mage might understand it."
+        }
+      ],
+      "rating": 2
+    },
+    {
+      "arcanum": "Prime",
+      "level": 1,
+      "name": "Sacred Geometry",
+      "psf": "Duration",
+      "short": "See ley lines and nodes. If none are visible from the caster's position, they get the direction of the nearest. Add Death 1 or Spirit 1: show Avernian Gates or Loci, respectively.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "Know if the node is on a Hallow."
+        }
+      ],
+      "rating": 1
+    },
+    {
+      "arcanum": "Prime",
+      "level": 1,
+      "name": "Scribe Grimoire",
+      "psf": "Potency",
+      "withstand": "Total Arcanum dots of all Arcana uesd in the scribed spell.",
+      "short": "Costs 1 mana. Create a Grimoire of a known Rote, or copy a Rote from another Grimoire. Only 1 Rote per cast. Grimoires can hold multiple Rotes, depending on physical size. Lasts for Duration.",
+      "reaches": [
+        {
+          "count": 1,
+          "effect": "+1 mana: lasting."
+        }
+      ],
+      "rating": 1
+    },
+    {
+      "arcanum": "Prime",
+      "level": 1,
+      "name": "Word of Command",
+      "psf": "Potency",
+      "short": "Bypass magical triggers/conditions. Effect immediately triggers. If the effect requires mana to activate, the caster must supply it. Adding other relevant Arcanum can enable triggering effects tied to that Arcanum.",
+      "reaches": [],
+      "rating": 1
     }
   ]
 }

@@ -52,10 +52,12 @@ class Index extends React.Component {
     super(props)
     this.state = {
       fateLevel: 2,
-      timeLevel: 3
+      timeLevel: 3,
+      primeLevel: 1
     }
     this.changeFateLevel = this.changeFateLevel.bind(this)
     this.changeTimeLevel = this.changeTimeLevel.bind(this)
+    this.changePrimeLevel = this.changePrimeLevel.bind(this)
   }
 
   changeFateLevel (val) {
@@ -66,14 +68,23 @@ class Index extends React.Component {
     this.setState({ timeLevel: val })
   }
 
+  changePrimeLevel (val) {
+    this.setState({ primeLevel: val })
+  }
+
   render () {
     const sliderMarks = { 0: 'None', 1: 1, 2: 2, 3: 3, 4: 4, 5: 5 }
-    const filtered = spellData.spells.filter(e => (e.arcanum === 'Time' && e.level <= this.state.timeLevel) || (e.arcanum === 'Fate' && e.level <= this.state.fateLevel))
+    const filtered = spellData.spells
+      .filter(e =>
+        (e.arcanum === 'Time' && e.level <= this.state.timeLevel) ||
+        (e.arcanum === 'Fate' && e.level <= this.state.fateLevel) ||
+        (e.arcanum === 'Prime' && e.level <= this.state.primeLevel)
+      )
     return (
       <div>
         <div className="controls">
           <div className="row">
-            <div className="col m5 offset-m1 s12">
+            <div className="col m3 offset-m1 s12">
               <h5 className="slider-title">Fate</h5>
               <Slider
                 min={0}
@@ -85,7 +96,7 @@ class Index extends React.Component {
               />
             </div>
             <div className="hide-on-med-and-up spacer" />
-            <div className="col m5 s12">
+            <div className="col m3 s12">
               <h5 className="slider-title">Time</h5>
               <Slider
                 min={0}
@@ -94,6 +105,18 @@ class Index extends React.Component {
                 marks={sliderMarks}
                 value={this.state.timeLevel}
                 onChange={this.changeTimeLevel}
+              />
+            </div>
+            <div className="hide-on-med-and-up spacer" />
+            <div className="col m3 s12">
+              <h5 className="slider-title">Prime</h5>
+              <Slider
+                min={0}
+                max={5}
+                step={1}
+                marks={sliderMarks}
+                value={this.state.primeLevel}
+                onChange={this.changePrimeLevel}
               />
             </div>
             <div className="hide-on-med-and-up spacer" />
