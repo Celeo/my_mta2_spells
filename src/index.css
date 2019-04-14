@@ -1,5 +1,4 @@
 body {
-    padding-top: 1em;
     padding-bottom: 5em;
 }
 
@@ -47,4 +46,23 @@ h4 {
 .spacer {
     padding-bottom: 3em;
     margin-bottom: 3em;
+}
+
+.spacer-small {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-bottom {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.controls-actual {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }

@@ -72,22 +72,30 @@ ArcanumSlider.propTypes = {
 }
 
 const ControlSliders = (props) => {
-  const items = props.rows.map((row, index) => (
-    <div key={row[0]}>
-      <div className="col m3 offset-m1 s12">
-        <ArcanumSlider
-          title={row[0]}
-          level={row[1]}
-          onChange={row[2]}
-        />
-      </div>
-      { index !== props.rows.length - 1 ? <div className="hide-on-med-and-up spacer" /> : null }
-    </div>
-  ))
+  const [show, setShow] = useState(true)
+  const toggle = () => setShow(!show)
   return (
     <div className="controls">
-      <div className="row">
-        { items }
+      <div className="row no-bottom">
+        <div className="col s1 offset-s6">
+          <button className="btn blue" onClick={toggle}>
+            <i className="material-icons">{ show ? 'expand_more' : 'expand_less' }</i>
+          </button>
+        </div>
+      </div>
+      <div className={'controls-actual' + (show ? ' hidden' : '')}>
+        <div className="row">
+          {
+            props.rows.map((row, index) =>
+              <div key={row[0]}>
+                <div className="col m4 s12">
+                  <ArcanumSlider title={row[0]} level={row[1]} onChange={row[2]} />
+                </div>
+                { index !== props.rows.length - 1 ? <div className="hide-on-med-and-up spacer" /> : null }
+              </div>
+            )
+          }
+        </div>
       </div>
     </div>
   )
@@ -118,11 +126,7 @@ const Index = () => {
         ]}
       />
       <div className="container-medium">
-        {
-          filtered.map(s =>
-            <Spell key={s.name} {...s} />
-          )
-        }
+        { filtered.map(s => <Spell key={s.name} {...s} />) }
       </div>
     </div>
   )
