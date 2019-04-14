@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
 import Slider from 'rc-slider'
@@ -6,6 +6,8 @@ import '../node_modules/materialize-css/dist/css/materialize.min.css'
 import 'rc-slider/assets/index.css'
 import './index.css'
 import spellData from './data.json'
+
+const sliderMarks = { 0: 'None', 1: 1, 2: 2, 3: 3, 4: 4, 5: 5 }
 
 const SpellReach = (props) => {
   const reachText = Array.from(Array(props.count).keys()).map(_ => '➕').join('')
@@ -26,7 +28,7 @@ const Spell = (props) => {
         { props.arcanum } { props.level }: { props.name }
         { props.rating > 0 && <span className="spell-rating">{ '⭐'.repeat(props.rating) }</span> }
       </h4>
-      { props.withstand ? <p className="withstand-rating">Withstand: { props.withstand }</p> : '' }
+      { props.withstand ? <p className="withstand-rating">Withstand: { props.withstand }</p> : null }
       <p className="spell-body"><strong>{ props.short }</strong></p>
       {
         props.reaches.map(r => <SpellReach key={r.count + ':' + r.effect} count={r.count} effect={r.effect} />)
@@ -47,100 +49,93 @@ Spell.propTypes = {
   rating: PropTypes.number
 }
 
-class Index extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      fateLevel: 2,
-      timeLevel: 3,
-      primeLevel: 1
-    }
-    this.changeFateLevel = this.changeFateLevel.bind(this)
-    this.changeTimeLevel = this.changeTimeLevel.bind(this)
-    this.changePrimeLevel = this.changePrimeLevel.bind(this)
-  }
+const ArcanumSlider = (props) => {
+  return (
+    <div>
+      <h5 className="slider-title">{props.title}</h5>
+      <Slider
+        min={0}
+        max={5}
+        step={1}
+        marks={sliderMarks}
+        value={props.level}
+        onChange={props.onChange}
+      />
+    </div>
+  )
+}
 
-  changeFateLevel (val) {
-    this.setState({ fateLevel: val })
-  }
+ArcanumSlider.propTypes = {
+  title: PropTypes.string,
+  level: PropTypes.number,
+  onChange: PropTypes.func
+}
 
-  changeTimeLevel (val) {
-    this.setState({ timeLevel: val })
-  }
-
-  changePrimeLevel (val) {
-    this.setState({ primeLevel: val })
-  }
-
-  render () {
-    const sliderMarks = { 0: 'None', 1: 1, 2: 2, 3: 3, 4: 4, 5: 5 }
-    const filtered = spellData.spells
-      .filter(e =>
-        (e.arcanum === 'Time' && e.level <= this.state.timeLevel) ||
-        (e.arcanum === 'Fate' && e.level <= this.state.fateLevel) ||
-        (e.arcanum === 'Prime' && e.level <= this.state.primeLevel)
-      )
-    return (
-      <div>
-        <div className="controls">
-          <div className="row">
-            <div className="col m3 offset-m1 s12">
-              <h5 className="slider-title">Fate</h5>
-              <Slider
-                min={0}
-                max={5}
-                step={1}
-                marks={sliderMarks}
-                value={this.state.fateLevel}
-                onChange={this.changeFateLevel}
-              />
-            </div>
-            <div className="hide-on-med-and-up spacer" />
-            <div className="col m3 s12">
-              <h5 className="slider-title">Time</h5>
-              <Slider
-                min={0}
-                max={5}
-                step={1}
-                marks={sliderMarks}
-                value={this.state.timeLevel}
-                onChange={this.changeTimeLevel}
-              />
-            </div>
-            <div className="hide-on-med-and-up spacer" />
-            <div className="col m3 s12">
-              <h5 className="slider-title">Prime</h5>
-              <Slider
-                min={0}
-                max={5}
-                step={1}
-                marks={sliderMarks}
-                value={this.state.primeLevel}
-                onChange={this.changePrimeLevel}
-              />
-            </div>
-            <div className="hide-on-med-and-up spacer" />
-          </div>
-        </div>
-        <div className="container-medium">
-          {
-            filtered.map(s =>
-              <Spell
-                key={s.name}
-                arcanum={s.arcanum}
-                level={s.level}
-                name={s.name}
-                psf={s.psf}
-                withstand={s.withstand}
-                short={s.short}
-                reaches={s.reaches}
-                rating={s.rating}
-              />)
-          }
-        </div>
+const ControlSliders = (props) => {
+  const items = props.rows.map((row, index) => (
+    <div key={row[0]}>
+      <div className="col m3 offset-m1 s12">
+        <ArcanumSlider
+          title={row[0]}
+          level={row[1]}
+          onChange={row[2]}
+        />
       </div>
-    )
-  }
+      { index !== props.rows.length - 1 ? <div className="hide-on-med-and-up spacer" /> : null }
+    </div>
+  ))
+  return (
+    <div className="controls">
+      <div className="row">
+        { items }
+      </div>
+    </div>
+  )
+}
+
+ControlSliders.propTypes = {
+  rows: PropTypes.array
+}
+
+const Index = () => {
+  const [fateLevel, setFateLevel] = useState(2)
+  const [timeLevel, setTimeLevel] = useState(3)
+  const [primeLevel, setPrimeLevel] = useState(1)
+
+  const filtered = spellData.spells.filter(e =>
+    (e.arcanum === 'Time' && e.level <= timeLevel) ||
+    (e.arcanum === 'Fate' && e.level <= fateLevel) ||
+    (e.arcanum === 'Prime' && e.level <= primeLevel)
+  )
+
+  return (
+    <div>
+      <ControlSliders
+        rows={[
+          [ 'Fate', fateLevel, setFateLevel ],
+          [ 'Time', timeLevel, setTimeLevel ],
+          [ 'Prime', primeLevel, setPrimeLevel ]
+        ]}
+      />
+      <div className="container-medium">
+        {
+          filtered.map(s =>
+            <Spell
+              key={s.name}
+              arcanum={s.arcanum}
+              level={s.level}
+              name={s.name}
+              psf={s.psf}
+              withstand={s.withstand}
+              short={s.short}
+              reaches={s.reaches}
+              rating={s.rating}
+            />
+          )
+        }
+      </div>
+    </div>
+  )
 }
 
 ReactDOM.render(<Index />, document.getElementById('app'))
