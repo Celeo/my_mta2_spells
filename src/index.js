@@ -120,17 +120,7 @@ const Index = () => {
       <div className="container-medium">
         {
           filtered.map(s =>
-            <Spell
-              key={s.name}
-              arcanum={s.arcanum}
-              level={s.level}
-              name={s.name}
-              psf={s.psf}
-              withstand={s.withstand}
-              short={s.short}
-              reaches={s.reaches}
-              rating={s.rating}
-            />
+            <Spell key={s.name} {...s} />
           )
         }
       </div>
