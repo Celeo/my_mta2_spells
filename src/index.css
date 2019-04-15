@@ -1,4 +1,9 @@
+html, body {
+    height: 100%;
+}
+
 body {
+    margin: 0;
     padding-bottom: 5em;
 }
 
@@ -65,4 +70,13 @@ h4 {
 .controls-actual {
     padding-top: 2rem;
     padding-bottom: 4rem;
+}
+
+.flex-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
 }

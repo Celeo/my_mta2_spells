@@ -74,15 +74,12 @@ ArcanumSlider.propTypes = {
 
 const ControlSliders = (props) => {
   const [show, setShow] = useState(true)
-  const toggle = () => setShow(!show)
   return (
     <div className="controls">
-      <div className="row no-bottom">
-        <div className="col s1 offset-s6">
-          <button className="btn blue" onClick={toggle}>
-            <i className="material-icons">{ show ? 'expand_more' : 'expand_less' }</i>
-          </button>
-        </div>
+      <div className="flex-row">
+        <button className="btn blue" onClick={() => setShow(!show)}>
+          <i className="material-icons">{ show ? 'expand_more' : 'expand_less' }</i>
+        </button>
       </div>
       <div className={'controls-actual' + (show ? ' hidden' : '')}>
         <div className="row">
