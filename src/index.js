@@ -10,10 +10,8 @@ import spellData from './data.json'
 
 const Index = () => {
   return (
-    <div>
-      <div className="container-medium" id="spell-listing">
-        <SpellListing spellData={spellData} />
-      </div>
+    <div className="container-medium" id="spell-listing">
+      <SpellListing spellData={spellData} />
     </div>
   )
 }
