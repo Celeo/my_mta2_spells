@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Slider from 'rc-slider'
+
 import './SpellListing.css'
 
 const sliderMarks = { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5 }
@@ -74,7 +75,7 @@ const ControlSliders = (props) => {
     <div className="controls">
       <div className="flex-row">
         <button className="btn blue" onClick={() => setShow(!show)}>
-          <i className="material-icons">{ show ? 'expand_more' : 'expand_less' }</i>
+          Filter <i className="material-icons right">{ show ? 'expand_more' : 'expand_less' }</i>
         </button>
       </div>
       <div className={'controls-actual' + (show ? ' hidden' : '')}>
