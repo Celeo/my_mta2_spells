@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import Slider from 'rc-slider'
 import { Modal, Button } from 'react-materialize'
 
-import './SpellListing.css'
-
 const sliderMarks = { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5 }
 
 const SpellReach = (props) => {
