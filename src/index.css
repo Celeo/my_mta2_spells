@@ -7,39 +7,13 @@ body {
     padding-bottom: 5em;
 }
 
-.controls {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .container-medium {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.spell-rating {
-    color: darkgoldenrod;
-    margin-left: 1rem;
-}
-
 h4 {
-    margin-bottom: 0;
-}
-
-.withstand-rating {
-    font-size: 120%;
-    margin-bottom: -1em;
-}
-
-.spell-body {
-    font-size: 140%;
-}
-
-.spell-reaches {
-    font-size: 110%;
-    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -65,11 +39,6 @@ h4 {
 .no-bottom {
     padding-bottom: 0;
     margin-bottom: 0;
-}
-
-.controls-actual {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
 }
 
 .flex-row {

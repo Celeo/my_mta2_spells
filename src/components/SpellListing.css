@@ -1,0 +1,24 @@
+.spell-rating {
+    color: darkgoldenrod;
+    margin-left: 1rem;
+}
+
+.withstand-rating {
+    font-size: 120%;
+    margin-bottom: -1em;
+}
+
+.spell-body {
+    font-size: 140%;
+}
+
+.spell-reaches {
+    font-size: 110%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.controls-actual {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
