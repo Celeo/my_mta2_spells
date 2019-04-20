@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import '../node_modules/materialize-css/dist/js/materialize.js'
 import '../node_modules/materialize-css/dist/css/materialize.min.css'
 import 'rc-slider/assets/index.css'
 import './index.css'

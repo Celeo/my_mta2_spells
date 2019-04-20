@@ -27,6 +27,11 @@ h4 {
     margin-bottom: 3em;
 }
 
+.spacer-medium {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
 .spacer-small {
     padding-bottom: 1em;
     margin-bottom: 1em;

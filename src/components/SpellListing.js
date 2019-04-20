@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Slider from 'rc-slider'
+import { Modal, Button } from 'react-materialize'
 
 import './SpellListing.css'
 
@@ -52,12 +53,13 @@ const ArcanumSlider = (props) => {
       <h5 className="slider-title">{props.title}</h5>
       <Slider
         min={0}
-        max={props.max}
+        max={5}
         step={1}
         marks={sliderMarks}
         value={props.level}
         onChange={props.onChange}
       />
+      <div className="spacer-medium" />
     </div>
   )
 }
@@ -65,7 +67,6 @@ const ArcanumSlider = (props) => {
 ArcanumSlider.propTypes = {
   title: PropTypes.string.isRequired,
   level: PropTypes.number.isRequired,
-  max: PropTypes.number.isRequired,
   onChange: PropTypes.func.isRequired
 }
 
@@ -74,23 +75,19 @@ const ControlSliders = (props) => {
   return (
     <div className="controls">
       <div className="flex-row">
-        <button className="btn blue" onClick={() => setShow(!show)}>
-          Filter <i className="material-icons right">{ show ? 'expand_more' : 'expand_less' }</i>
-        </button>
-      </div>
-      <div className={'controls-actual' + (show ? ' hidden' : '')}>
-        <div className="row">
-          {
-            props.rows.map((row, index) =>
-              <div key={row[0]}>
-                <div className="col m4 s12">
-                  <ArcanumSlider title={row[0]} level={row[1]} max={row[3] || 5} onChange={row[2]} />
-                </div>
-                { index !== props.rows.length - 1 ? <div className="hide-on-med-and-up spacer" /> : null }
-              </div>
-            )
-          }
-        </div>
+        <Modal trigger={
+          <Button className="blue" onClick={() => setShow(!show)}>Filter</Button>
+        }>
+          <div className="row">
+            <div className="col s12 l8 offset-l2">
+              {
+                props.rows.map((row, index) =>
+                  <ArcanumSlider key={row[0]} title={row[0]} level={row[1]} onChange={row[2]} />
+                )
+              }
+            </div>
+          </div>
+        </Modal>
       </div>
     </div>
   )
@@ -117,7 +114,7 @@ const SpellListing = (props) => {
         rows={[
           [ 'Fate', fateLevel, setFateLevel ],
           [ 'Time', timeLevel, setTimeLevel ],
-          [ 'Prime', primeLevel, setPrimeLevel, 1 ]
+          [ 'Prime', primeLevel, setPrimeLevel ]
         ]}
       />
       <div className="spell-listing">
