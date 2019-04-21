@@ -5,7 +5,7 @@ body {
 
 body {
     margin: 0;
-    padding-bottom: 5em;
+    padding-bottom: 5rem;
 }
 
 .container-medium {
@@ -24,23 +24,23 @@ h4 {
 }
 
 .spacer {
-    padding-bottom: 3em;
-    margin-bottom: 3em;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .spacer-medium {
-    padding-bottom: 2em;
-    margin-bottom: 2em;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .spacer-medium-top {
-    padding-top: 1em;
-    margin-top: 1em;
+    padding-top: 1rem;
+    margin-top: 1rem;
 }
 
 .spacer-small {
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .hidden {
@@ -63,12 +63,12 @@ h4 {
 
 .spell-rating {
     color: darkgoldenrod;
-    margin-left: 1rem;
+    margin-left: 1rrem;
 }
 
 .withstand-rating {
     font-size: 120%;
-    margin-bottom: -1em;
+    margin-bottom: -1rem;
 }
 
 .spell-body {
@@ -82,8 +82,8 @@ h4 {
 }
 
 .controls-actual {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2rrem;
+    padding-bottom: 2rrem;
 }
 
 .tabs .tab a {
@@ -101,4 +101,16 @@ h4 {
 
 .tabs .tab a:hover, .tabs .tab a.active {
     color: rgb(66, 165, 245);
+}
+
+.markdown ul > li {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+code {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.03);
 }
