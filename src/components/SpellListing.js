@@ -71,7 +71,7 @@ ArcanumSlider.propTypes = {
 const ControlSliders = (props) => {
   const [show, setShow] = useState(true)
   return (
-    <div className="controls">
+    <div>
       <div className="flex-row">
         <Modal trigger={
           <Button className="blue" onClick={() => setShow(!show)}>Filter</Button>
@@ -115,9 +115,7 @@ const SpellListing = (props) => {
           [ 'Prime', primeLevel, setPrimeLevel ]
         ]}
       />
-      <div className="spell-listing">
-        { filtered.map(s => <Spell key={s.name} {...s} />) }
-      </div>
+      { filtered.map(s => <Spell key={s.name} {...s} />) }
     </div>
   )
 }

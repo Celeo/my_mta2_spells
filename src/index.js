@@ -13,16 +13,18 @@ import CastingRules from './components/CastingRules.js'
 
 const Index = () => {
   return (
-    <div className="container-medium">
-      <Tabs className="tabs-fixed-width z-depth-2">
-        <Tab className="spacer-medium-top" title="Spells">
+    <Tabs className="tabs-fixed-width z-depth-2">
+      <Tab className="spacer-medium-top" title="Spells">
+        <div className="container-medium">
           <SpellListing spellData={spellData} />
-        </Tab>
-        <Tab className="spacer-medium-top" title="Casting Rules">
+        </div>
+      </Tab>
+      <Tab className="spacer-medium-top" title="Casting Rules">
+        <div className="container-medium">
           <CastingRules />
-        </Tab>
-      </Tabs>
-    </div>
+        </div>
+      </Tab>
+    </Tabs>
   )
 }
 
