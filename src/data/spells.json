@@ -536,7 +536,7 @@
       "level": 3,
       "name": "Shifting Sands",
       "psf": "Potency",
-      "short": "Travel back in time by Potency in turns. They retain injuries and conditions gained in the undone turns, and spent Mana and Willpower are not returned. Other spells cast on the subject in the revised time are canceled. When this spell ends, the changes are Lasting.",
+      "short": "Travel back in time by Potency in turns. The mage retains injuries and conditions gained in the undone turns, and spent Mana and Willpower are not returned. Other spells cast on the subject in the revised time are canceled. When this spell ends, the changes are Lasting.",
       "reaches": [
         {
           "count": 1,
@@ -588,7 +588,7 @@
           "effect": "In Social Combat, reduce the subject's Doors by Potency."
         }
       ],
-      "rating": 5
+      "rating": 4
     },
     {
       "arcanum": "Time",
