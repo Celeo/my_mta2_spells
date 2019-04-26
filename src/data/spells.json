@@ -5,6 +5,7 @@
       "level": 1,
       "name": "Interconnection",
       "psf": "Potency",
+      "withstand": "Composure",
       "short": "Reveal Fate's effect on stuff, show sympathetic connections between subjects, show magical oath violations, and show spells with conditional duration.",
       "reaches": [
         {
@@ -54,6 +55,7 @@
       "level": 1,
       "name": "Reading the Outmost Eddies",
       "psf": "Potency",
+      "withstand": "Composure",
       "short": "Small blessing or curse on the target, like finding some money or stepping in feces.",
       "reaches": [
         {
@@ -86,6 +88,7 @@
       "level": 2,
       "name": "Exceptional Luck",
       "psf": "Potency",
+      "withstand": "Composure",
       "short": "Bestow boon or hex.",
       "reaches": [
         {
@@ -172,6 +175,7 @@
       "level": 3,
       "name": "Grave Misfortune",
       "psf": "Potency",
+      "withstand": "Composure",
       "short": "The next Potency times the target takes damage, they also take extra Potency damage.",
       "reaches": [],
       "rating": 4
@@ -419,6 +423,7 @@
       "level": 2,
       "name": "Choose the Thread",
       "psf": "Potency",
+      "withstand": "Resolve",
       "short": "Subject rolls twice and the mage picks which result they use.",
       "reaches": [
         {
@@ -465,6 +470,7 @@
       "level": 2,
       "name": "Tipping the Hourglass",
       "psf": "Potency",
+      "withstand": "Resolve",
       "short": "Add or subtract Potency from subject's initiative.",
       "reaches": [],
       "rating": 1
@@ -518,6 +524,7 @@
       "level": 3,
       "name": "Chronos' Curse",
       "psf": "Potency",
+      "withstand": "Stamina",
       "short": "Costs 1 mana. Divide the subject's Speed by Potency, rounding down. Subject goes last in a turn. Subject's Defense is reduced by Potency.",
       "reaches": [
         {
