@@ -12,10 +12,10 @@ import spellData from './data/spells.json'
 import castingRules from './data/casting_rules.md'
 import fateAndTimeRules from './data/fate_and_time_rules.md'
 
-const data = {
+const props = {
   spellData,
   castingRules,
   fateAndTimeRules
 }
 
-ReactDOM.render(<App {...data} />, document.getElementById('app'))
+ReactDOM.render(<App {...props} />, document.getElementById('app'))

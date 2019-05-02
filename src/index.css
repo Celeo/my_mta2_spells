@@ -86,23 +86,6 @@ h4 {
     padding-bottom: 2rrem;
 }
 
-.tabs .tab a {
-    color: rgb(66, 165, 245);
-}
-
-.tabs .tab a:focus.active {
-    color: rgb(66, 165, 245);
-    background-color: rgb(187, 222, 251);
-}
-
-.tabs .indicator {
-    background-color: rgb(66, 165, 245);
-}
-
-.tabs .tab a:hover, .tabs .tab a.active {
-    color: rgb(66, 165, 245);
-}
-
 .markdown ul > li {
     list-style-type: disc;
     margin-left: 1rem;
@@ -113,4 +96,12 @@ code {
     margin-right: 5px;
     color: rgba(255, 0, 0, 0.5);
     background-color: rgba(255, 0, 0, 0.03);
+}
+
+.brand {
+    margin-left: 1rem;
+}
+
+.last-nav-item {
+    margin-right: 1rem;
 }
