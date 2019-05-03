@@ -7,8 +7,8 @@ const Spell = (props) => {
     <div>
       <h4>
         { props.arcanum } { props.level }: { props.name }
-        { props.rating > 0 && <span className="spell-rating">{ '⭐'.repeat(props.rating) }</span> }
       </h4>
+      <span className="rating-stars">{ props.rating > 0 && <span className="spell-rating">{ '⭐'.repeat(props.rating) }</span> }</span>
       { props.withstand ? <p className="withstand-rating">Withstand: { props.withstand }</p> : null }
       <p className="spell-body"><strong>{ props.short }</strong></p>
       {
