@@ -565,6 +565,7 @@
       "level": 3,
       "name": "Weight of Years",
       "psf": "Potency",
+      "withstand": "Health",
       "short": "Advance time on the subject, inflicting Potency in bashing damage. Also works on structures. Might not work on immportal creatures.",
       "reaches": [
         {
@@ -602,6 +603,7 @@
       "level": 4,
       "name": "Rend Lifespan",
       "psf": "Potency",
+      "withstand": "Health",
       "short": "Inflict Potency lethal damage by aging different parts of the subject's body. Ageless entities are immune.",
       "reaches": [
         {
