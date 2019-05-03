@@ -5,7 +5,7 @@ import ControlSliders from './ControlSliders.js'
 
 const SpellListing = (props) => {
   const [fateLevel, setFateLevel] = useState(2)
-  const [timeLevel, setTimeLevel] = useState(3)
+  const [timeLevel, setTimeLevel] = useState(4)
   const [primeLevel, setPrimeLevel] = useState(1)
 
   const filtered = props.spellData.spells.filter(e =>
