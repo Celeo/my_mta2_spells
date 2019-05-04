@@ -19,6 +19,15 @@ A **Boon** is one of the following effects:
 
 Like Hexes, Boons can be mixed and matched by the caster. No two effects can apply to the same skill. No character may have 2 of the same condition unless they target specific and different things.
 
+Positive Conditions:
+
+|Name|Effect|
+|-|-|
+|Charmed|Resolve to reduce a single bout of damage to 1, or let lapse and have the Storyteller provide a random benefit|
+|Informed|Resolve before rolling on the subject that granted it - a failed roll succeeds with 1 success instead or a successful roll grants an Exceptiona Success instead|
+|Inspired|Resolve before rolling - 3 successes are an Exceptional Success and restores a point of Willpower|
+|Steadfast|Resolve after failing a roll to instead succeed with a single success, or resolve before rolling to change a chance die to a single normal die|
+
 ## Time
 
 ### Temporal Sympathy
