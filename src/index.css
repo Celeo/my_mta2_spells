@@ -66,7 +66,7 @@ h4 {
     margin-left: 1rrem;
 }
 
-.withstand-rating {
+.spell-factor {
     font-size: 120%;
     margin-bottom: 0.5rem;
     margin-top: 0;
@@ -89,7 +89,7 @@ h4 {
     padding-bottom: 2rrem;
 }
 
-.markdown ul > li {
+.markdown ul>li {
     list-style-type: disc;
     margin-left: 1rem;
 }
@@ -109,6 +109,6 @@ code {
     margin-right: 1rem;
 }
 
-.rating-stars {
+.spell-rating-stars {
     font-size: 200%;
 }
