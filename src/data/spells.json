@@ -566,7 +566,7 @@
       "name": "Weight of Years",
       "psf": "Potency",
       "withstand": "Health",
-      "short": "Advance time on the subject, inflicting Potency in bashing damage. Also works on structures. Might not work on immportal creatures.",
+      "short": "Advance time on the subject, inflicting Potency in bashing damage. Also works on structures. Ageless entities are immune.",
       "reaches": [
         {
           "count": 1,
