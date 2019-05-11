@@ -11,10 +11,12 @@ const SpellListing = (props) => {
   const [minPrimeLevel, setMinPrimeLevel] = useState(0)
   const [maxPrimeLevel, setMaxPrimeLevel] = useState(1)
 
+  const btwn = (value, bottom, top) => bottom <= value && value <= top
+
   const filtered = props.spellData.spells.filter(e =>
-    (e.arcanum === 'Fate' && e.level >= minFateLevel && e.level <= maxFateLevel) ||
-    (e.arcanum === 'Time' && e.level >= minTimeLevel && e.level <= maxTimeLevel) ||
-    (e.arcanum === 'Prime' && e.level >= minPrimeLevel && e.level <= maxPrimeLevel)
+    (e.arcanum === 'Fate' && btwn(e.level, minFateLevel, maxFateLevel)) ||
+    (e.arcanum === 'Time' && btwn(e.level, minTimeLevel, maxTimeLevel)) ||
+    (e.arcanum === 'Prime' && btwn(e.level, minPrimeLevel, maxPrimeLevel))
   )
 
   const setFate = ([bottom, top]) => {
