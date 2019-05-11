@@ -13,12 +13,7 @@ const ControlSliders = (props) => {
         }>
           <div className="row">
             <div className="col s12 l8 offset-l2">
-              {
-                props.rows.map((row, index) => {
-                  console.log(row)
-                  return <ArcanumSlider key={row[0]} title={row[0]} level={row[1]} onChange={row[2]} />
-                })
-              }
+              { props.rows.map((row, index) => <ArcanumSlider key={row[0]} title={row[0]} value={row[1]} onChange={row[2]} />) }
             </div>
           </div>
         </Modal>

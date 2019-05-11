@@ -4,43 +4,25 @@ import Spell from './Spell.js'
 import ControlSliders from './ControlSliders.js'
 
 const SpellListing = (props) => {
-  const [minFateLevel, setMinFateLevel] = useState(0)
-  const [maxFateLevel, setMaxFateLevel] = useState(2)
-  const [minTimeLevel, setMinTimeLevel] = useState(0)
-  const [maxTimeLevel, setMaxTimeLevel] = useState(4)
-  const [minPrimeLevel, setMinPrimeLevel] = useState(0)
-  const [maxPrimeLevel, setMaxPrimeLevel] = useState(1)
+  const [fateLevel, setFateLevel] = useState([0, 2])
+  const [timeLevel, setTimeLevel] = useState([0, 2])
+  const [primeLevel, setPrimeLevel] = useState([0, 2])
 
   const btwn = (value, bottom, top) => bottom <= value && value <= top
 
   const filtered = props.spellData.spells.filter(e =>
-    (e.arcanum === 'Fate' && btwn(e.level, minFateLevel, maxFateLevel)) ||
-    (e.arcanum === 'Time' && btwn(e.level, minTimeLevel, maxTimeLevel)) ||
-    (e.arcanum === 'Prime' && btwn(e.level, minPrimeLevel, maxPrimeLevel))
+    (e.arcanum === 'Fate' && btwn(e.level, fateLevel[0], fateLevel[1])) ||
+    (e.arcanum === 'Time' && btwn(e.level, timeLevel[0], timeLevel[1])) ||
+    (e.arcanum === 'Prime' && btwn(e.level, primeLevel[0], primeLevel[1]))
   )
-
-  const setFate = ([bottom, top]) => {
-    setMinFateLevel(bottom)
-    setMaxFateLevel(top)
-  }
-
-  const setTime = ([bottom, top]) => {
-    setMinTimeLevel(bottom)
-    setMaxTimeLevel(top)
-  }
-
-  const setPrime = ([bottom, top]) => {
-    setMinPrimeLevel(bottom)
-    setMaxPrimeLevel(top)
-  }
 
   return (
     <div>
       <ControlSliders
         rows={[
-          [ 'Fate', maxFateLevel, setFate ],
-          [ 'Time', maxTimeLevel, setTime ],
-          [ 'Prime', maxPrimeLevel, setPrime ]
+          [ 'Fate', fateLevel, setFateLevel ],
+          [ 'Time', timeLevel, setTimeLevel ],
+          [ 'Prime', primeLevel, setPrimeLevel ]
         ]}
       />
       { filtered.map(s => <Spell key={s.name} {...s} />) }

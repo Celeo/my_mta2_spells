@@ -13,7 +13,7 @@ const ArcanumSlider = (props) => {
         max={5}
         step={1}
         marks={sliderMarks}
-        defaultValue={[0, props.level]}
+        defaultValue={props.value}
         onChange={props.onChange}
       />
       <div className="spacer-medium" />
@@ -23,7 +23,7 @@ const ArcanumSlider = (props) => {
 
 ArcanumSlider.propTypes = {
   title: PropTypes.string.isRequired,
-  level: PropTypes.number.isRequired,
+  value: PropTypes.array.isRequired,
   onChange: PropTypes.func.isRequired
 }
 
