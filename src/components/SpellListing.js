@@ -5,8 +5,8 @@ import ControlSliders from './ControlSliders.js'
 
 const SpellListing = (props) => {
   const [fateLevel, setFateLevel] = useState([0, 2])
-  const [timeLevel, setTimeLevel] = useState([0, 2])
-  const [primeLevel, setPrimeLevel] = useState([0, 2])
+  const [timeLevel, setTimeLevel] = useState([0, 4])
+  const [primeLevel, setPrimeLevel] = useState([0, 1])
 
   const btwn = (value, bottom, top) => bottom <= value && value <= top
 
